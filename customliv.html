@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+        $(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+	</script>
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+ 		<a class="right" id="search"><img src="images/mag.png" alt="" style="width:20px; height:20px; cursor: pointer;"/></a>
+   <!-- <?php if($_SESSION["name"]!=""){ echo "<a class='right' style='float:right;' href='index.php'>Logout</a>";}
+         else{ echo " -->
+         <a class='right' style='float:right;' href='index.html'>Logout</a>
+         <!-- "
+     }    ?>  -->
+		<a class="right" id="CartLink">Cart</a>
+		<a class="right" id="inter" href='visualise.html'>Interactive</a>
+		<a class="right" id="des" href='design.html'>Design</a>
+		<!--a class="right" href="http://localhost/Webtech_Project/top_charts.php">Top Charts</a-->
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+</div>
+
+<div class="text">Customized Products</div>
+<br>
+
+
+<div id="noElem"></div> <br>
+<div id="deleteFromCart">
+<div id="inputError" style="display: none; color:red">Enter Valid Input</div>
+<input type='text' placeholder='Enter ID' id="DID">&nbsp&nbsp
+<button id="delBut" onclick="delItem()">Delete from Cart</button>
+</div>
+<br><br>
+
+<table id="cart">
+<tr>
+	<th>ID</th>
+    <th>Preview</th>
+    <th>Name</th>
+    <th id="pri">Price</th>
+</tr>
+
+
+  <tr>
+  	<td>99</td>
+    <td><a><img src="https://ii1.pepperfry.com/media/catalog/product/n/e/568x284/nebula-three-seater-sofa-in-blue-colour-by-febonic-nebula-three-seater-sofa-in-blue-colour-by-feboni-2odnfg.jpg"></a></td>
+    <td>Bold blue 3 seater sofa</td>
+    <td id="pr">20,490.00</td>
+  </tr>
+
+  <tr>
+    <td>168</td>
+    <td><a><img src="https://images-na.ssl-images-amazon.com/images/I/61IxLrk4gQL._AC_SY355_.jpg"></a></td>
+    <td>Bold red faux silk curtains</td>
+    <td id="pr">9,500.00</td>
+  </tr>
+
+  <tr>
+    <td>35</td>
+    <td><a><img src="https://ii1.pepperfry.com/media/catalog/product/a/l/494x544/alexandria-one-seater-recliner-in-teal-colour-by-casacraft-alexandria-one-seater-recliner-in-teal-co-q7frva.jpg"></a></td>
+    <td>Bold blue one-seater recliner</td>
+    <td id="pr">19,390.00</td>
+  </tr>
+
+  <td>603</td>
+    <td><a><img src="https://ii2.pepperfry.com/media/catalog/product/w/a/494x544/wayne-carter-coffee-table-in-walnut-colour-by-evok-wayne-carter-coffee-table-in-walnut-colour-by-evo-yqqe4x.jpg"></a></td>
+    <td>Bold brown coffee table</td>
+    <td id="pr">13,000.00</td>
+  </tr>
+
+  <td>1663</td>
+    <td><a><img src="https://images-na.ssl-images-amazon.com/images/I/51Zi62cEWkL._AC_SX355_.jpg"></a></td>
+    <td>Bold red carpet</td>
+    <td id="pr">2,870.00</td>
+  </tr>
+
+  <td>290</td>
+    <td><a><img src="https://images-na.ssl-images-amazon.com/images/I/71gySQtEr3L._AC_SX425_.jpg"></a></td>
+    <td>Bold red wood shelf</td>
+    <td id="pr">2,090.00</td>
+  </tr>
+
+  <tr>
+  	<td>Subtotal:</td>
+  	<td></td>
+  	<td></td>
+  	<td id="totalPrice">67,340/-</td>
+  </tr>
+
+
+
+
+</table>
+
+<br/>
+<br/>
+
+<div id="checkout">
+<a href="homepage.html"><button id="Cancel">Cancel</button></a>
+<a href="checkout.html"><button id="checkBut">Checkout</button></a>
+</div>
+
+</div>
+</div>
+</body>
+<script src="js/search-modal.js"></script>
+
+</html>

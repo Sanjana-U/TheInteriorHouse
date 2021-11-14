@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/vendor_add.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+        $(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+	</script>
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+
+    <a class='right' id='logout' style='float:right;' href='vendor_index.html'>Logout</a>
+		<a class="right" id="CartLink">Add</a>
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+    <label id="usernameDisp"></label>
+
+</div>
+
+<div id="addproduct">
+  <form id="add">
+    <label>Product Name :</label>
+    <input id="name" type="text" name="productname" style="width:60%; margin: 15px 54px"><br>
+    <label>Image URL :</label>
+    <input id="imgurl" type="text" name="imageurl" style="width:60%; margin: 15px 82px"><br>
+    <label>Product ID :</label>
+    <input id="prodid" type="text" name="pid" style="width:60%; margin: 15px 85px"><br>
+    <label>Price :</label>
+    <input id="price" type="text" name="price" style="width:60%; margin: 15px 127px"><br>
+    <label>Description :</label>
+    <input id="desc" type="text" name="description" style="width:60%; margin: 15px 80px"><br>
+    <button id="submit" style="width:20%; margin: 30px 400px" onclick="addprod()">Add Product</button>
+  </form>
+</div>
+
+
+</div>
+</div>
+
+</body>
+<script src="js/search-modal.js"></script>
+
+<script type="text/javascript" src="integrator/add.js"></script>
+
+</html>

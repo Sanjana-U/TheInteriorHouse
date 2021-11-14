@@ -1,0 +1,110 @@
+body{
+	margin:0px;
+	}
+
+
+
+	@font-face {
+    font-family: shorelines;
+    src: url("../fonts/shorelines.otf");
+}
+
+@font-face {
+	font-family: athene;
+	src: url("../fonts/Athene.otf");
+}
+
+	@font-face {
+    font-family: prisma;
+    src: url("../fonts/Prisma.ttf");
+}
+
+	@font-face {
+    font-family: paperdaisy;
+    src: url("../fonts/paperdaisy.ttf");
+}
+
+	@font-face {
+    font-family: fifty;
+    src: url("../fonts/fifty-five.otf");
+}
+
+	@font-face {
+    font-family: fish;
+    src: url("../fonts/fishchips.ttf");
+}
+
+	@font-face {
+    font-family: champagne;
+    src: url("../fonts/champagne.ttf");
+}
+
+
+	.back {
+	/*background: url("../images/hp1.jpg") no-repeat center;
+	/*display: table;*/
+	width: 100%;
+	padding:120px 0;
+	background-size: cover;
+	position: relative;
+
+}
+	.alb{
+		background-color: #fefefe;
+		width:100%;
+	}
+
+
+.main {
+    margin-top: 0px; /* Add a top margin to avoid content overlay */
+}
+
+#log{
+	float:left;
+}
+
+.right{
+
+	font-family: champagne;
+	color: black;
+	/*margin-top: 10 px;*/
+}
+
+input{
+  color: black;
+  border: 2px solid black;
+	padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: champagne;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+	border-radius: 7px;
+}
+
+#drag-1, #drag-2 {
+  width: 25%;
+  min-height: 6.5em;
+  border-radius: 0.75em;
+  touch-action: none;
+  user-select: none;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+#myImg{
+  height: 500px;
+  width: 97%;
+  padding-left: 70px;
+}
+
+#prodImg1{
+  height: 260px;
+}
+
+#prodImg2{
+  height: 350px;
+}

@@ -1,0 +1,69 @@
+body{
+	margin:0px;
+	}
+
+
+
+	@font-face {
+    font-family: shorelines;
+    src: url("../fonts/shorelines.otf");
+}
+
+@font-face {
+	font-family: athene;
+	src: url("../fonts/Athene.otf");
+}
+
+	@font-face {
+    font-family: prisma;
+    src: url("../fonts/Prisma.ttf");
+}
+
+	@font-face {
+    font-family: paperdaisy;
+    src: url("../fonts/paperdaisy.ttf");
+}
+
+	@font-face {
+    font-family: fifty;
+    src: url("../fonts/fifty-five.otf");
+}
+
+	@font-face {
+    font-family: fish;
+    src: url("../fonts/fishchips.ttf");
+}
+
+	@font-face {
+    font-family: champagne;
+    src: url("../fonts/champagne.ttf");
+}
+
+	.back {
+	background-color: #fcf9f7;
+	/*display: table;*/
+	width: 100%;
+	text-align: center;
+	padding:90px 0;
+	background-size: cover;
+	position: relative;
+
+}
+	.alb{
+		background-color: #e3e3e3;
+		width:100%;
+	}
+
+
+.main {
+    margin-top: 0px; /* Add a top margin to avoid content overlay */
+}
+
+#log{
+	float:left;
+}
+
+.h1 {
+	font-size: 30px;
+	color:#E47911;
+}

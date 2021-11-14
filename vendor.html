@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+        $(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+	</script>
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+
+    <a class='right' id='logout' style='float:right;' href='vendor_index.html'>Logout</a>
+		<a class="right" id="CartLink" href="vendor_add.html">Add</a>
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+    <label id="usernameDisp"></label>
+
+</div>
+
+<div class="text">Catalog</div>
+<br>
+
+
+<div id="noElem"></div> <br>
+
+
+<div id="deleteFromCart">
+<div id="inputError" style="display: none; color:red">Enter Valid Input</div>
+<input type='text' placeholder='Enter ID' id="DID">&nbsp&nbsp
+<button id="delBut" onclick="delItem()">Delete from Catalog</button>
+</div>
+<br><br>
+
+<table id="cart">
+<tr>
+	<th>ID</th>
+    <th>Preview</th>
+    <th>Name</th>
+    <th id="pri">Price</th>
+</tr>
+
+<!--
+  <tr>
+  	<td>387</td>
+    <td><a><img src="https://images.gr-assets.com/books/1361039443m/41865.jpg"></a></td>
+    <td>Twilight</td>
+    <td id="pr">₹499.00</td>
+  </tr>
+
+  <tr>
+  	<td>Subtotal :</td>
+  	<td></td>
+  	<td></td>
+  	<td id="totalPrice">dsf</td>
+  </tr>
+
+-->
+
+
+</table>
+
+<br/>
+<br/>
+
+
+</div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="integrator/vendor.js"></script>
+
+</html>

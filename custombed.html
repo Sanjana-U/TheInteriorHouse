@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+        $(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+	</script>
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+ 		<a class="right" id="search"><img src="images/mag.png" alt="" style="width:20px; height:20px; cursor: pointer;"/></a>
+   <!-- <?php if($_SESSION["name"]!=""){ echo "<a class='right' style='float:right;' href='index.php'>Logout</a>";}
+         else{ echo " -->
+         <a class='right' style='float:right;' href='index.html'>Logout</a>
+         <!-- "
+     }    ?>  -->
+		<a class="right" id="CartLink">Cart</a>
+		<a class="right" id="inter" href='visualise.html'>Interactive</a>
+		<a class="right" id="des" href='design.html'>Design</a>		
+		<!--a class="right" href="http://localhost/Webtech_Project/top_charts.php">Top Charts</a-->
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+</div>
+
+<div class="text">Customized Products</div>
+<br>
+
+
+<div id="noElem"></div> <br>
+
+<br><br>
+
+<table id="cart">
+<tr>
+	<th>ID</th>
+    <th>Preview</th>
+    <th>Name</th>
+    <th id="pri">Price</th>
+</tr>
+
+
+  <tr>
+  	<td>487</td>
+    <td><a><img src="http://picture-cdn.wheretoget.it/lgsfwd-l-610x610-home+accessory-sofa-pink-pastel+pink-girly-home+furniture-couch.jpg"></a></td>
+    <td>Pastel pink sofa</td>
+    <td id="pr">4,790.00</td>
+  </tr>
+
+  <tr>
+    <td>168</td>
+    <td><a><img src="http://frenchstyleauthority.com/wp-content/uploads/2012/01/Pastel-pink-vintage-cupboard.jpg"></a></td>
+    <td>Pastel Pink vintage cupboard</td>
+    <td id="pr">6,500.00</td>
+  </tr>
+
+  <tr>
+    <td>30</td>
+    <td><a><img src="https://medias.maisonsdumonde.com/image/upload/q_auto,f_auto/w_500/img/pastel-pink-metal-bedside-table-1000-4-1-192988_1.jpg"></a></td>
+    <td>Pastel pink metal bedside table</td>
+    <td id="pr">1,390.00</td>
+  </tr>
+
+  <td>1543</td>
+    <td><a><img src="https://b3h2.scene7.com/is/image/BedBathandBeyond/12061643323719m?$690$&amp;wid=690&amp;hei=690"></a></td>
+    <td>Pastel pink bed & pillows</td>
+    <td id="pr">18,000.00</td>
+  </tr>
+
+  <td>763</td>
+    <td><a><img src="//cdn.shopify.com/s/files/1/1667/9587/products/71Mg_2BJhQNkL._SL1500_1024x1024.jpg?v=1530946003"></a></td>
+    <td>Pastel pink home curtains</td>
+    <td id="pr">13,870.00</td>
+  </tr>
+
+  <td>290</td>
+    <td><a><img src="https://cdn20.pamono.com/p/z/2/6/265506_u5ofgcgn49/pastel-pink-table-lamp-by-orikomi-1.jpg"></a></td>
+    <td>Pastel pink table lamp</td>
+    <td id="pr">890.00</td>
+  </tr>
+
+  <tr>
+  	<td>Subtotal:</td>
+  	<td></td>
+  	<td></td>
+  	<td id="totalPrice">45,440/-</td>
+  </tr>
+
+
+
+
+</table>
+
+<br/>
+<br/>
+
+<div id="checkout">
+<a href="homepage.html"><button id="Cancel">Cancel</button></a>
+<a href="checkout.html"><button id="checkBut">Checkout</button></a>
+</div>
+
+</div>
+</div>
+</body>
+<script src="js/search-modal.js"></script>
+
+</html>

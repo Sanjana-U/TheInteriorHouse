@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>Big Book Barn</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+        $(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+	</script>
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+ 		<a class="right" id="search"><img src="images/mag.png" alt="" style="width:20px; height:20px; cursor: pointer;"/></a>
+   <!-- <?php if($_SESSION["name"]!=""){ echo "<a class='right' style='float:right;' href='index.php'>Logout</a>";}
+         else{ echo " -->
+         <a class='right' style='float:right;' href='index.html'>Logout</a>
+         <!-- "
+     }    ?>  -->
+		<a class="right" id="CartLink">Cart</a>
+		<a class="right" id="inter" href='visualise.html'>Interactive</a>
+		<a class="right" id="des" href='design.html'>Design</a>
+		<!--a class="right" href="http://localhost/Webtech_Project/top_charts.php">Top Charts</a-->
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+</div>
+
+<div class="text">Customized Products</div>
+<br>
+
+
+<div id="noElem"></div> <br>
+<div id="deleteFromCart">
+<div id="inputError" style="display: none; color:red">Enter Valid Input</div>
+<input type='text' placeholder='Enter ID' id="DID">&nbsp&nbsp
+<button id="delBut" onclick="delItem()">Delete from Cart</button>
+</div>
+<br><br>
+
+<table id="cart">
+<tr>
+	<th>ID</th>
+    <th>Preview</th>
+    <th>Name</th>
+    <th id="pri">Price</th>
+</tr>
+
+
+
+
+  <tr>
+    <td>402</td>
+    <td><a><img src="https://i.pinimg.com/564x/6e/72/24/6e7224d1a67db2ada76a064f35aa8b4c.jpg"></a></td>
+    <td>Modern Black Sink</td>
+    <td id="pr">10,500.00</td>
+  </tr>
+
+  <tr>
+    <td>38</td>
+    <td><a><img src="http://www.myglasgow.org/figure/Black-Silicone-Utensils-With-Acacia-Handles-Set-Of-6.jpg"></a></td>
+    <td>Modern kitchen cooking items</td>
+    <td id="pr">2,790.00</td>
+  </tr>
+
+  <tr>
+    <td>1121</td>
+    <td><a><img src="https://www.ourel.com/wp-content/uploads/2019/08/Black-White-Kitchen-Colors-Scheme-696x870.jpg"></a></td>
+    <td>Modern marble kitchen table & stools</td>
+    <td id="pr">19,390.00</td>
+  </tr>
+
+  <td>238</td>
+    <td><a><img src="https://images-na.ssl-images-amazon.com/images/I/61bXS3dK5rL._AC_SX522_.jpg"></a></td>
+    <td>Modern ceiling lights</td>
+    <td id="pr">7,870.00</td>
+  </tr>
+
+  <td>505</td>
+    <td><a><img src="https://images-na.ssl-images-amazon.com/images/I/61XLTgsh3vL._AC_SX425_.jpg"></a></td>
+    <td>Modern kitchen shelf</td>
+    <td id="pr">12,000.00</td>
+  </tr>
+
+
+
+  <td>90</td>
+    <td><a><img src="https://www.claimnow.co/wp-content/uploads/2019/07/modern-indoor-plants-sale-white-plant-pots-uk-black-kitchen-planters-placed-in-architectures-adorable-kitche.jpg"></a></td>
+    <td>Modern kitchen plant</td>
+    <td id="pr">900.00</td>
+  </tr>
+
+  <tr>
+  	<td>Subtotal:</td>
+  	<td></td>
+  	<td></td>
+  	<td id="totalPrice">53,450/-</td>
+  </tr>
+
+
+
+
+</table>
+
+<br/>
+<br/>
+
+<div id="checkout">
+<a href="homepage.html"><button id="Cancel">Cancel</button></a>
+<a href="checkout.html"><button id="checkBut">Checkout</button></a>
+</div>
+
+</div>
+</div>
+</body>
+<script src="js/search-modal.js"></script>
+
+</html>

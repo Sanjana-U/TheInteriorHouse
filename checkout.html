@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/logo.png" type="image/gif" rel="shortcut icon" />
+		<title>The Interior House</title>
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+  <script type="text/javascript">
+
+		$(document).ready(function() {
+     $(window).scroll(function() {
+      if($(document).scrollTop() > 150) {
+        $('#nav').addClass('shrink');
+      }
+      else {
+      $('#nav').removeClass('shrink');
+      }
+    });
+  });
+
+  function confirmOrder() {
+  if(confirm("This will confirm your order. Are you sure you want to continue?")) {
+    window.location.href = "invoice1.html"
+	}
+}
+	</script>
+
+</head>
+
+<body>
+ <div id="a" class="main">
+ <div class="back">
+ <div class="topnav" id="nav">
+ 		<a class=“right” id="search"><img src="images/mag.png" alt="" style="width:20px; height:20px; cursor: pointer;"/></a>
+   <!-- <?php if($_SESSION["name"]!=""){ echo "<a class='right' style='float:right;' href='index.php'>Logout</a>";}
+         else{ echo " -->
+         <a class='right' style='float:right;' href='index.html'>Logout</a>
+         <!-- ";
+     }    ?>  -->
+		<a class="right" id="CartLink">Cart</a>
+		<a class="right" id="inter" href='visualise.html'>Interactive</a>
+		<a class="right" id="des" href='design.html'>Design</a>		
+		<!--a class="right" href="http://localhost/Webtech_Project/top_charts.php">Top Charts</a-->
+		<a id="log" target="_top"><img src="images/logo.png" alt="logo" height="50px" /></a>
+
+	</div>
+	<div id="audi">
+	 <div class="listen">
+	     <section style="text-align:left;">
+
+	     <form id="order">
+
+	     	<fieldset id="pay" style="margin-top:-50px;">
+
+	             <legend>Delivery Details</legend>
+	             	    <input type="text" id="name" name="name" placeholder="Name">&nbsp&nbsp&nbsp
+	             	    <input type="text" id="number" name="number" placeholder="10-digit mobile number">
+	             	    <br>
+	             	    <input type="text" id="pincode" name="pincode" placeholder="Pincode">&nbsp&nbsp&nbsp
+	             	    <input type="text" id="locality" name="locality" placeholder="Locality">
+	             	    <br>
+	             	    <textarea name="address" id="address" placeholder="Address (Area and Street)"></textarea>
+	             	    <br>
+	             	    <input type="text" id="city" name="city" placeholder="City/District/Town">&nbsp&nbsp&nbsp
+
+	             	    <select id="state" name="state">
+    				  	<option value="andhra">Andhra Pradesh</option>
+    				  	<option value="delhi">Delhi</option>
+      					<option value="goa">Goa</option>
+      					<option value="gujarat">Gujarat</option>
+       				  	<option value="himachal">Himachal Pradesh</option>
+      					<option value="karnatake">Karnataka</option>
+      					<option value="kerala">Kerala</option>
+      					<option value="maharashtra">Maharashtra</option>
+      					<option value="rajasthan">Rajasthan</option>
+      					<option value="tamil">Tamil Nadu</option>
+      					<option value="uttar">Uttar Pradesh</option>
+      					<option value="west">West Bengal</option>
+    					</select>
+    					<br><br>
+    					<label style="color:grey;">Delivery Timings</label><br><br>
+    					<input type="radio" name="del_time" value="all"> Home (All day Delivery)   &nbsp&nbsp&nbsp&nbsp
+  						<input type="radio" name="del_time" value="work"> Work (Delivery between 10 AM - 5 PM)<br>
+  						<br><br>
+  						<label style="color:grey;">Delivery Type</label><br><br>
+    					<input type="radio" name="del_type" value="express1"> One-Day Express Delivery at &#8377; 100<br>
+						<input type="radio" name="del_type" value="express2"> Two-Day Express Delivery at &#8377; 80<br>
+  						<input type="radio" name="del_type" value="normal"> Free Delivery ( 5-6 working days )<br>
+
+
+	                 <br>
+
+	         </fieldset>
+
+	         <br><br><br>
+
+	         <fieldset id="pay" style="margin-top:-40px;">
+
+	             <legend>Payment Details</legend>
+
+	                             <input id=creditcard name=cardtype type=radio />
+	                             <label for=creditcard>Credit Card</label>
+															 <br/>
+	                             <input id=netbanking name=cardtype type=radio />
+	                             <label for=netbanking>Net Banking</label>
+															 <br/>
+	                             <input id=debitcard name=cardtype type=radio />
+	                             <label for=debitcard>Debit Card</label>
+															 <br/>
+	                             <input id=emi name=cardtype type=radio />
+	                             <label for=emi>EMI (Easy Installments)</label>
+	                             							<br/>
+	                          	 <input id=cod name=cardtype type=radio />
+	                             <label for=cod>Cash/Card on Delivery</label>
+
+	                 <br>
+
+	         </fieldset><br>
+
+
+	<div id='confirmdiv'><div class="confirm" onclick="confirmOrder()">Place Order</div></div>
+
+	     </form>
+
+	 </section>
+	 </div>
+	</div>
+ </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1 style="text-align: center; font-family:champagne;font-size:60px">Search</h1>
+    </div>
+    <div class="modal-body">
+
+  <input id="searchtext" type="text" class="searchb" list="artists" name="userName" placeholder="Product" value="" list="user-datalist" required autofocus>
+  <input class="sear" id="sub" type="submit" value="Find" onclick="search()">
+    </div>
+  </div>
+
+</div>
+
+<script src="js/search-modal.js"></script>
+<script src="integrator/checkout.js"></script>
+
+</html>
